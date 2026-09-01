@@ -8120,6 +8120,7 @@ Webflow.define('brand', module.exports = function ($) {
   // Module methods
 
   api.ready = function () {
+    return; // Badge disabled for static mirror
     var shouldBrand = $html.attr('data-wf-status');
     var publishedDomain = $html.attr('data-wf-domain') || '';
 
